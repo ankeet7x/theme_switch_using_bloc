@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:theme_switcher/bloc/theme_bloc.dart';
 import 'package:theme_switcher/home.dart';
 
-Future<void> main() async {
+void main() async {
   runApp(BlocProvider(
     create: (context) => ThemeBloc()..add(InitialThemeSetEvent()),
     child: const MyApp(),
